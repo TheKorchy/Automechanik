@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Domov</title>
+    <link rel="stylesheet" href="styly.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm" style="background-color:#0f2c44;">
+    <div class="container">
+        <div class="header-agile">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="obrazky/Designer.png" alt="" width="auto" height="60" class="d-inline-block align-text-top">
+            </a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" style="border-color:#1e73be;">
+            <span class="navbar-toggler-icon" style="color:#1e73be;"></span>
+        </button>
+        <div class="collapse d-flex" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item nav-hover">
+                    <a class="nav-link" href="index.html">
+                        <i class="fa-regular fa-house"></i>
+                        <span class="nav-text">Domov</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-hover">
+                    <a class="nav-link" href="O_sluzbe.html">
+                        <i class="fa-solid fa-car"></i>
+                        <span class="nav-text">O Službe</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-hover">
+                    <a class="nav-link" href="Sluzby.html">
+                        <i class="fa-regular fa-file"></i>
+                        <span class="nav-text">Služby</span>
+                    </a>
+                </li>
+                <li class="nav-item nav-hover">
+                    <a class="nav-link" href="Kontakt.html">
+                        <i class="fa-regular fa-user"></i>
+                        <span class="nav-text">Kontakt</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide">
+    <!-- Indikátory -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Obsah -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://picsum.photos/1200/400?random=1" alt="Servis" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Prinášame komplexné riešenia na rôzne problémy</h3>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://picsum.photos/1200/400?random=2" alt="Objednávky" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Objednávky vybavíme rýchlo a spoľahlivo</h3>
+                <p>Rezervácia online už do 6 hodín!</p>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://picsum.photos/1200/400?random=3" alt="Tipy" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Zaujímavosti zo servisu</h3>
+                <p>Každý deň nové tipy pre vodičov</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ovládanie -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Predchádzajúce</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Ďalšie</span>
+    </button>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer text-center py-4 bg-dark text-light">
+    <h2>Autoservis</h2>
+    <p>Rýchlo a spoľahlivo</p>
+    <div class="social-icons mb-2">
+        <a href="https://www.facebook.com/J.korchnak/" target="_blank" title="Facebook" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@korchnak.j" target="_blank" title="TikTok" class="text-light me-3"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/jozko_korchnak/" target="_blank" title="Instagram" class="text-light"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p class="copy-right mb-0">@2025 Autoservis - Torysa</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var el = document.querySelector('#demo');
+        if (el) {
+            new bootstrap.Carousel(el, { interval: false, ride: false });
+        }
+    });
+</script>
+</body>
+</html>
