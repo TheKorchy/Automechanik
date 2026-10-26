@@ -1,0 +1,240 @@
+:root {
+    --primary-dark: #0f2c44;
+    --primary-light: #1e73be;
+    --primary-hover: #155a8c;
+    --text-light: #ffffff;
+    --text-dark: #111;
+}
+
+/* === Základné štýly === */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+}
+
+/* === Navigácia === */
+.navbar {
+    background-color: var(--primary-dark) !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.navbar-brand img {
+    height: 60px;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    font-weight: 500;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary-light) !important;
+    transform: translateY(-2px);
+}
+
+/* === Carousel === */
+#aiCarousel,
+#aiCarousel .carousel-inner,
+#aiCarousel .carousel-item {
+    height: 500px;
+}
+
+#aiCarousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background-color: #1a3b5c;
+    transition: transform 0.6s ease;
+}
+
+#aiCarousel .carousel-item img:hover {
+    transform: scale(1.02);
+}
+
+.carousel-caption {
+    background: rgba(0,0,0,0.6);
+    border-radius: 12px;
+    padding: 15px 30px;
+}
+
+.carousel-caption h5 {
+    color: var(--text-light);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* === Sekcie === */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    color: var(--primary-dark);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === Obrázky === */
+.img-fluid {
+    border: 5px solid var(--primary-light);
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.03);
+}
+
+/* === Služby === */
+.services {
+    padding: 60px 0;
+    background-color: var(--primary-dark);
+    text-align: center;
+    color: var(--text-light);
+}
+
+.services h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-box {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--primary-light);
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    background-color: var(--primary-light);
+    transform: translateY(-5px);
+}
+
+.service-box i {
+    font-size: 40px;
+    color: var(--primary-light);
+    margin-bottom: 15px;
+}
+
+.service-box a {
+    color: var(--primary-light);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.service-box a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+/* === CTA sekcia === */
+.cta-box {
+    width: 100%;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-light) 100%);
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: var(--text-light);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.cta-btn {
+    background-color: var(--text-light);
+    color: var(--primary-dark);
+    border: 2px solid var(--text-light);
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.cta-btn:hover {
+    background-color: var(--primary-light);
+    color: var(--text-light);
+    border-color: var(--primary-light);
+    transform: scale(1.07);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* === Footer === */
+footer {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+footer h2 {
+    color: var(--primary-light);
+    font-weight: 700;
+}
+
+.copy-right {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* === Sociálne ikony === */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.social-icons a {
+    color: var(--text-light);
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primary-light);
+}
+
+/* === Pevné sociálne ikony === */
+.fixed-social-icons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-dark);
+    border-radius: 0 5px 5px 0;
+    z-index: 1000;
+}
+
+.fixed-social-icons a {
+    color: var(--text-light);
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.fixed-social-icons a:hover {
+    background-color: var(--primary-hover);
+}
